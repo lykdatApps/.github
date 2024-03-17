@@ -1,0 +1,159 @@
+name: User Story
+description: Submit a new user story for the project
+title: "[Story]: "
+labels: ["user story", "needs review"]
+projects: ["lykdatApps/"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for contributing a user story! Please fill out the details below to help us understand your proposal better.
+
+  - type: input
+    id: title
+    attributes:
+      label: Story Title
+      description: Provide a short and descriptive title for the story.
+      placeholder: ex. "Enhance login security features"
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Provide a detailed description of the issue. Include any relevant background information or context.
+        
+        Ask yourself:
+        - What is the need?
+        - How did it arise?
+        - What's the most important outcome?
+        
+        Consider:
+        - Providing clear, concise, and comprehensive details.
+        - Including background context or related tasks.
+      placeholder: Detailed description of the user story
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: scope
+    attributes:
+      label: Scope of the Story
+      description: Check all that apply to the scope of this story.
+      options:
+        - label: In Scope
+        - label: Out of Scope
+    validations:
+      required: true
+
+  - type: textarea
+    id: implications
+    attributes:
+      label: Implications of the Task
+      description: |
+        Discuss the broader implications of this task.
+        
+        Ask yourself:
+        - How does this task impact other parts of the system or product?
+        - Are there any potential risks or benefits?
+        
+        Consider:
+        - The broader system and user impact.
+        - Dependencies and their management.
+      placeholder: "Implications of the task"
+    validations:
+      required: false
+
+  - type: textarea
+    id: goals-objectives
+    attributes:
+      label: Goals and Objectives
+      description: |
+        List the primary goals and objectives of this task. 
+        
+        Ask yourself:
+        - What are we aiming to achieve?
+        - How will we measure success?
+        
+        Consider:
+        - Setting measurable, achievable goals.
+        - Aligning objectives with overall project or organizational goals.
+      placeholder: "Goals and objectives for this story"
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        Detail the criteria that must be met for this task to be considered complete.
+        
+        Ask yourself:
+        - What must be true for this work to be considered done?
+        - How will these criteria be verified?
+        
+        Consider:
+        - Specific, testable criteria agreed upon before starting work.
+        - Potential edge cases or scenarios that need to be addressed.
+      placeholder: "Acceptance criteria"
+    validations:
+      required: true
+
+  - type: textarea
+    id: recommendations
+    attributes:
+      label: Implementation Recommendations (Optional)
+      description: |
+        Suggest any specific technologies, libraries, or frameworks. 
+        
+        Ask yourself:
+        - Are there existing solutions or patterns that could simplify implementation?
+        - What are potential challenges or obstacles?
+        
+        Consider:
+        - Recommending technologies or approaches based on past experiences or research.
+        - The balance between innovation and using proven solutions.
+      placeholder: "Any implementation recommendations"
+    validations:
+      required: false
+
+  - type: input
+    id: timeline
+    attributes:
+      label: Timeline and Priority
+      description: Provide a deadline or target date for completion, and indicate the priority.
+      placeholder: ex. "Deadline: 2023-12-31, Priority: High"
+    validations:
+      required: false
+
+  - type: textarea
+    id: assignees-reviewers
+    attributes:
+      label: Assignees and Reviewers
+      description: |
+        Suggest potential assignees or reviewers for this story.
+        
+        Ask yourself:
+        - Who has the expertise and capacity to take on this task?
+        - Who will provide oversight or review?
+        
+        Consider:
+        - Balancing workloads and expertise.
+        - Providing opportunities for growth and collaboration.
+      placeholder: "Suggested assignees or reviewers"
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References
+      description: Include any references to documentation, previous issues, external resources, or discussions.
+      placeholder: "Relevant references"
+    validations:
+      required: false
