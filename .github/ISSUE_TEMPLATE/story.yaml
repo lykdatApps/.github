@@ -127,7 +127,7 @@ body:
     attributes:
       label: Timeline and Priority
       description: Provide a deadline or target date for completion, and indicate the priority.
-      placeholder: ex. "Deadline: 2023-12-31, Priority: High"
+      placeholder: "e.g: Deadline: 2023-12-31, Priority: High"
     validations:
       required: false
 
